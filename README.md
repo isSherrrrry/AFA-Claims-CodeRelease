@@ -65,4 +65,16 @@ While the dataset cannot be disclosed, the I, S, O tables are consititued by the
 
 ## Data Preprocessing
 
-## Model Development
+The [covert-to-long.ipynb](./preprocessing/convert-to-long.ipynb) notebook converts the wide format of the I, S, O tables to a long format as well as convert any ICD-10 codes to ICD-9 codes. The conversion tables can be found at [conversion_tables](./utils/conversion_tables/).
+
+The risk scores were calculated in [chads.ipynb] (./preprocessing/chads.ipynb), and the comorbidities were calculated in [CCI_ECI.r](./utils/CCI_ECI.r).
+
+The [find-success-failure.ipynb](./preprocessing/find-success-failure.ipynb) notebook was used to find the success and failure groups of AF ablation as defined in the paper.
+
+## Modeling and Analysis
+
+The [modeling.ipynb](./modeling/modeling.ipynb) notebook contains the code for the machine learning models and codes used in the paper.
+
+The [stats-analysis.ipynb](./modeling/stats-analysis.ipynb) notebook contains the code for the statistical analysis used in the paper.
+
+
